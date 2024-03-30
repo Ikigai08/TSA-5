@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSA 5</title>
+    <link rel="stylesheet" href="./Assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <h1>Hatdog Store</h1>
+
+        <div class="menu-section">
+            <h2>Menu</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://www.allrecipes.com/thmb/2wWvo44ZLI-C5JHSbGWsGRzfzFs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/4546347-c00cb3b278744512b892ecba9d8b76e7.jpg" alt="Talkneneng">
+                    </div>
+                    <p>Talkneneng - 10 Pesos</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://panlasangpinoy.com/wp-content/uploads/2009/06/Turon-500x485.jpg" alt="Talkneneng">
+                    </div>
+                    <p>Tworon - 5 Pesos</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://i0.wp.com/pacifictuna.ph/wp-content/uploads/2021/06/CALAMARES.jpg?fit=600%2C600&ssl=1" alt="Talkneneng">
+                    </div>
+                    <p>Killemeres - 10 Pesos</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://sweetsimplevegan.com/wp-content/uploads/2021/03/filipino-Banana-Cue-sweet-simple-vegan.jpg" alt="Talkneneng">
+                    </div>
+                    <p>Beheneneque - 12 Pesos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-section">
+            <h2>Order Now</h2>
+            <form id="orderForm">
+                <label for="talkneneng">Talkneneng Quantity:</label>
+                <input type="number" id="talkneneng" min="0"><br>
+                
+                <label for="tworon">Tworon Quantity:</label>
+                <input type="number" id="tworon" min="0"><br>
+                
+                <label for="killemeres">Killemeres Quantity:</label>
+                <input type="number" id="killemeres" min="0"><br>
+                
+                <label for="beheneneque">Beheneneque Quantity:</label>
+                <input type="number" id="beheneneque" min="0"><br>
+
+                <label for="cashGiven">Cash Given:</label>
+                <input type="text" id="cashGiven" min="0"><br>
+            </form>
+        </div>
+
+        <div class="contact-section">
+            <h2>Contact Information</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone">
+            </form>
+        </div>
+
+        <button type="button" onclick="showModal()">Submit Order</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="receipt"></div>
+        </div>
+    </div>
+
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>
